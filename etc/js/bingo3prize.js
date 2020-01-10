@@ -22,7 +22,7 @@
     
     // 保管ナンバー
 	var numberListAll = [];
-    var maxNumber = 7;
+    var maxNumber = 8;
 
     // スタックプッシュ
     for(var num = 1; num <= maxNumber; num++)
