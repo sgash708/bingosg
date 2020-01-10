@@ -116,6 +116,11 @@ body {
   font-size: 60pt;
   padding: 10px 140px
 }
+
+#start-buttons {
+  font-size: 40pt;
+  padding: 10px 140px
+}
 #reset-button {
   font-size: 16pt;
   padding: 49px 10px
