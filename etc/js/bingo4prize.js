@@ -3,7 +3,7 @@
 	var startButton = $('#start-button');
 	var resetButton = $('#reset-button');
 	var historiesDiv = $('#histories');
-	var drumAudio = $('#drum').get(0);
+	// var drumAudio = $('#drum').get(0);
     
     // 再帰
     // 履歴
@@ -104,8 +104,8 @@
 	var start = function(){
 		isStarted = true;
 		startButton.text('Stop');
-		drumAudio.currentTime = 0; 
-		drumAudio.play();
+		// drumAudio.currentTime = 0; 
+		// drumAudio.play();
 		rourletto();
 	};
 	var startClicked = function(e){
