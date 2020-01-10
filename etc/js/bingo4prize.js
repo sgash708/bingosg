@@ -22,7 +22,7 @@
     
     // 保管ナンバー
 	var numberListAll = [];
-    var maxNumber = 70;
+    var maxNumber = 7;
 
     // スタックプッシュ
     for(var num = 1; num <= maxNumber; num++)
@@ -36,7 +36,8 @@
     
 	var setNumberList = function(a) {
 		storage.setItem(listKey, JSON.stringify(a));
-	};
+    };
+    print(a);
 	var getNumberList = function() {
 		return JSON.parse(storage.getItem(listKey));
     };
