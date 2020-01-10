@@ -35,12 +35,14 @@
     var removedKey = 'partybingo.removedlist';
     
 	var setNumberList = function(a) {
+	    document.writeln(JSON.stringify(a));
 		storage.setItem(listKey, JSON.stringify(a));
     };
 	var getNumberList = function() {
 		return JSON.parse(storage.getItem(listKey));
     };
 	var setRemovedList = function(a) {
+	    document.writeln(JSON.stringify(a));
 		storage.setItem(removedKey, JSON.stringify(a));
     };
     // リストから取り除く
@@ -129,5 +131,4 @@
 		}
 	};
 	resetButton.click(resetClicked);
-	document.writeln(JSON.stringify(a));
 })();
