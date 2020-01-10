@@ -34,14 +34,14 @@
 	var listKey = 'partybingo.numberlist';
     var removedKey = 'partybingo.removedlist';
     
-	var setNumberList = function(e) {
-		storage.setItem(listKey, JSON.stringify(e));
+	var setNumberList = function(a) {
+		storage.setItem(listKey, JSON.stringify(a));
     };
 	var getNumberList = function() {
 		return JSON.parse(storage.getItem(listKey));
     };
-	var setRemovedList = function(e) {
-		storage.setItem(removedKey, JSON.stringify(e));
+	var setRemovedList = function(a) {
+		storage.setItem(removedKey, JSON.stringify(a));
     };
     // リストから取り除く
 	var getRemovedList = function() {
@@ -64,7 +64,6 @@
 		resetLists();
 	} 
 
-	// create util method
 	var getNumberRamdom = function(){
 		var numberList = getNumberList();
 		var i = Math.floor(Math.random() * numberList.length);
@@ -124,7 +123,7 @@
 			resetLists();
 			pingoNumber.text('00');
 			historiesDiv.empty();
-			drumAudio.pause();
+			// drumAudio.pause();
 			startButton.focus();
 		}
 	};
