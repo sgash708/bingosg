@@ -37,7 +37,6 @@
 	var setNumberList = function(a) {
 		storage.setItem(listKey, JSON.stringify(a));
     };
-    print(a);
 	var getNumberList = function() {
 		return JSON.parse(storage.getItem(listKey));
     };
@@ -130,5 +129,5 @@
 		}
 	};
 	resetButton.click(resetClicked);
-	
+	document.writeln(JSON.stringify(a));
 })();
