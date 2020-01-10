@@ -3,7 +3,7 @@
 	var startButton = $('#start-button');
 	var resetButton = $('#reset-button');
 	var historiesDiv = $('#histories');
-	// var drumAudio = $('#drum').get(0);
+	var drumAudio = $('#drum').get(0);
     
     // 再帰
     // 履歴
@@ -22,7 +22,7 @@
     
     // 保管ナンバー
 	var numberListAll = [];
-    var maxNumber = 7;
+    var maxNumber = 70;
 
     // スタックプッシュ
     for(var num = 1; num <= maxNumber; num++)
@@ -124,7 +124,7 @@
 			resetLists();
 			pingoNumber.text('00');
 			historiesDiv.empty();
-			// drumAudio.pause();
+			drumAudio.pause();
 			startButton.focus();
 		}
 	};
