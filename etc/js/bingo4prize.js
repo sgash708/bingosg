@@ -34,16 +34,14 @@
 	var listKey = 'partybingo.numberlist';
     var removedKey = 'partybingo.removedlist';
     
-	var setNumberList = function(a) {
-	    document.writeln(JSON.stringify(a));
-		storage.setItem(listKey, JSON.stringify(a));
+	var setNumberList = function(e) {
+		storage.setItem(listKey, JSON.stringify(e));
     };
 	var getNumberList = function() {
 		return JSON.parse(storage.getItem(listKey));
     };
-	var setRemovedList = function(a) {
-	    document.writeln(JSON.stringify(a));
-		storage.setItem(removedKey, JSON.stringify(a));
+	var setRemovedList = function(e) {
+		storage.setItem(removedKey, JSON.stringify(e));
     };
     // リストから取り除く
 	var getRemovedList = function() {
