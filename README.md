@@ -1,2 +1,3 @@
 # sg.github.io
-#　めちゃめちゃ急いで作りました！
+2020年の新卒ビンゴ大会で作りました。
+https://sgash708/github.io/bingosg/index.html
